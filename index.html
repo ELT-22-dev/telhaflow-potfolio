@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edil Leon — Desenvolvedor Fullstack</title>
+  <meta name="description" content="Portfólio de Edil Leon, desenvolvedor fullstack. Sistemas web, landing pages e automações do zero à produção." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-decoration" aria-hidden="true"></div>
+
+  <header id="header" class="header">
+    <div class="floating-nav-wrap">
+      <nav class="floating-nav" aria-label="Navegação principal">
+        <a href="#inicio" class="nav-pill-item nav-home" aria-label="Início">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8" /><path d="M5 10v10a1 1 0 0 0 1 1h3v-6h6v6h3a1 1 0 0 0 1-1V10" /></svg>
+        </a>
+        <a href="#inicio" class="nav-pill-item">Início</a>
+        <a href="#projetos" class="nav-pill-item">Projetos</a>
+        <a href="#skills" class="nav-pill-item">Skills</a>
+        <a href="#certificados" class="nav-pill-item">Certificados</a>
+        <a href="#contato" class="nav-pill-item">Contato</a>
+      </nav>
+
+      <button type="button" id="menuButton" class="menu-button" aria-label="Abrir menu" aria-expanded="false">
+        <span class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+
+    <nav id="mobileNav" class="nav-mobile" aria-label="Navegação mobile" hidden>
+      <a href="#inicio">Início</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="inicio" class="hero hero-split">
+      <div class="hero-content">
+        <p class="eyebrow">Desenvolvedor Fullstack · Disponível para novos projetos</p>
+        <h1 class="hero-title">Edil Leon</h1>
+        <h2 class="hero-tagline">Construo sistemas que <span class="cursive">funcionam</span> de verdade.</h2>
+        <p class="hero-text">
+          Construo sistemas web completos — do banco de dados à interface — com foco em
+          resolver problemas reais de negócio. Já entreguei sistemas de gestão, landing pages
+          e automações para clientes, do zero à produção.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">Ver projetos <span class="btn-arrow">→</span></a>
+          <a href="#contato" class="btn-play">
+            <span class="play-circle">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+            </span>
+            <span class="play-label">Fale comigo<br /><small>Entre em contato</small></span>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>9+</strong><span>Projetos entregues</span></div>
+          <div class="hero-stat"><strong>100%</strong><span>Remoto</span></div>
+          <div class="hero-stat"><strong>3</strong><span>Certificações</span></div>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="photo-rings" aria-hidden="true">
+          <span class="ring ring-1"></span>
+          <span class="ring ring-2"></span>
+          <span class="ring ring-3"></span>
+        </div>
+        <img src="fotos/foto-capa.webp" alt="Edil Leon" class="hero-photo-img" />
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <h2 class="section-title">Projetos</h2>
+      <p class="section-subtitle">Sistemas full-stack, landing pages e projetos de clientes.</p>
+
+      <div class="grid projects-grid" id="projectsGrid">
+        <article class="card project-card">
+          <span class="tag">Sistema · Full-stack</span>
+          <h3 class="card-title">Cafe Café</h3>
+          <p class="card-text">Sistema de PDV para cafeteria: pedidos em tempo real, KDS, controle de estoque e usuários com autenticação JWT.</p>
+          <div class="stack">
+            <span class="pill pill-sm">Node.js</span>
+            <span class="pill pill-sm">Express</span>
+            <span class="pill pill-sm">Prisma</span>
+            <span class="pill pill-sm">PostgreSQL</span>
+            <span class="pill pill-sm">Socket.io</span>
+            <span class="pill pill-sm">JWT</span>
+          </div>
+          <div class="card-links">
+            <a href="https://cafe-cafe-edlt-24.vercel.app" target="_blank" rel="noreferrer" class="link-accent">Ver projeto ↗</a>
+            <a href="https://github.com/ELT-22-dev/cafe-cafe" target="_blank" rel="noreferrer" class="link-muted">Código ↗</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <span class="tag">Sistema · Full-stack</span>
+          <h3 class="card-title">EstéticaPro</h3>
+          <p class="card-text">Sistema de gestão para clínica de estética: agendamentos, clientes e controle de atendimentos.</p>
+          <div class="stack">
+            <span class="pill pill-sm">React</span>
+            <span class="pill pill-sm">Node.js</span>
+            <span class="pill pill-sm">API REST</span>
+          </div>
+          <div class="card-links">
+            <a href="https://clinica-estetica-rho-eight.vercel.app" target="_blank" rel="noreferrer" class="link-accent">Ver projeto ↗</a>
+            <a href="https://github.com/ELT-22-dev/clinica-estetica" target="_blank" rel="noreferrer" class="link-muted">Código ↗</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <span class="tag">Sistema · Full-stack</span>
+          <h3 class="card-title">TecidOps Console</h3>
+          <p class="card-text">Console de operações e controle de estoque, com painel administrativo dedicado.</p>
+          <div class="stack">
+            <span class="pill pill-sm">React</span>
+            <span class="pill pill-sm">Node.js</span>
+            <span class="pill pill-sm">API REST</span>
+          </div>
+          <div class="card-links">
+            <a href="https://teciops.vercel.app" target="_blank" rel="noreferrer" class="link-accent">Ver projeto ↗</a>
+            <a href="https://github.com/ELT-22-dev/teciops" target="_blank" rel="noreferrer" class="link-muted">Código ↗</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <span class="tag">Sistema · Full-stack</span>
+          <h3 class="card-title">OdontoManage Pro</h3>
+          <p class="card-text">Sistema de gestão para clínicas odontológicas: pacientes, agenda e prontuários.</p>
+          <div class="stack">
+            <span class="pill pill-sm">React</span>
+            <span class="pill pill-sm">Node.js</span>
+            <span class="pill pill-sm">API REST</span>
+          </div>
+          <div class="card-links">
+            <a href="https://odontomanage-pro.vercel.app" target="_blank" rel="noreferrer" class="link-accent">Ver projeto ↗</a>
+            <a href="https://github.com/ELT-22-dev/odontomanage-pro" target="_blank" rel="noreferrer" class="link-muted">Código ↗</a>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <span class="tag">Sistema · Full-stack</span>
+          <h3 class="card-title">MotoManage Pro</h3>
+          <p class="card-text">Sistema de gestão para oficina mecânica de motos: ordens de serviço, clientes e peças.</p>
+          <div class="stack">
+            <span class="pill pill-sm">React</span>
+            <span class="pill pill-sm">Node.js</span>
+            <span class="pill pill-sm">API REST</span>
+          </div>
+          <div class="card-links">
+            <a href="https://mecanica-motos.vercel.app" target="_blank" rel="noreferrer" class="link-accent">Ver projeto ↗</a>
+            <a href="https://github.com/ELT-22-dev/mecanica-motos" target="_blank" rel="noreferrer" class="link-muted">Código ↗</a>
+          </div>
+        </article>
+
+        <article class="card project-card extra" hidden>
+          <span class="tag">Landing Page</span>
+          <h3 class="card-title">Áurea Barber Club</h3>
+          <p class="card-text">Landing page premium para barbearia, com animações de scroll e micro-interações.</p>
+          <div class="stack">
+            <span class="pill pill-sm">HTML</span>
+            <span class="pill pill-sm">CSS</span>
+            <span class="pill pill-sm">JavaScript</span>
+            <span class="pill pill-sm">Motion</span>
+            <span class="pill pill-sm">Three.js</span>
+          </div>
+          <div class="card-links">
+            <a href="https://barber-premium-lp.vercel.app" target="_blank" rel="noreferrer" class="link-accent">Ver projeto ↗</a>
+            <a href="https://github.com/ELT-22-dev/Barber-premuim-lp" target="_blank" rel="noreferrer" class="link-muted">Código ↗</a>
+          </div>
+        </article>
+
+        <article class="card project-card extra" hidden>
+          <span class="tag">Landing Page</span>
+          <h3 class="card-title">Pesqueiro Ponte Preta</h3>
+          <p class="card-text">Landing page institucional para pesqueiro, com foco em conversão e apresentação visual.</p>
+          <div class="stack">
+            <span class="pill pill-sm">HTML</span>
+            <span class="pill pill-sm">CSS</span>
+            <span class="pill pill-sm">JavaScript</span>
+          </div>
+          <div class="card-links">
+            <a href="https://pesqueiro-ponte-preta.vercel.app" target="_blank" rel="noreferrer" class="link-accent">Ver projeto ↗</a>
+            <a href="https://github.com/ELT-22-dev/lp-pesqueiro" target="_blank" rel="noreferrer" class="link-muted">Código ↗</a>
+          </div>
+        </article>
+
+        <article class="card project-card extra" hidden>
+          <span class="tag">Site institucional · Cliente</span>
+          <h3 class="card-title">Vero Pizzas</h3>
+          <p class="card-text">Site institucional para pizzaria, com cardápio digital. Projeto de cliente em gestão ativa.</p>
+          <div class="stack">
+            <span class="pill pill-sm">HTML</span>
+            <span class="pill pill-sm">CSS</span>
+            <span class="pill pill-sm">JavaScript</span>
+          </div>
+          <div class="card-links">
+            <a href="https://veropizzas.com.br" target="_blank" rel="noreferrer" class="link-accent">Ver projeto ↗</a>
+            <a href="https://github.com/ELT-22-dev/site-da-pizzaria-vero-pizzas" target="_blank" rel="noreferrer" class="link-muted">Código ↗</a>
+          </div>
+        </article>
+
+        <article class="card project-card extra" hidden>
+          <span class="tag">Pessoal</span>
+          <h3 class="card-title">Link na Bio</h3>
+          <p class="card-text">Página pessoal de link-na-bio, construída com React, Tailwind CSS e Framer Motion.</p>
+          <div class="stack">
+            <span class="pill pill-sm">React</span>
+            <span class="pill pill-sm">Tailwind CSS</span>
+            <span class="pill pill-sm">Framer Motion</span>
+          </div>
+          <div class="card-links">
+            <a href="https://fluxosdan.cloud" target="_blank" rel="noreferrer" class="link-accent">Ver projeto ↗</a>
+            <a href="https://github.com/ELT-22-dev/link-na-bio" target="_blank" rel="noreferrer" class="link-muted">Código ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="show-more-wrap">
+        <button type="button" id="showAllBtn" class="btn btn-outline">Ver todos os projetos (9)</button>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-list">
+        <span class="pill">JavaScript</span>
+        <span class="pill">React</span>
+        <span class="pill">Node.js</span>
+        <span class="pill">Express</span>
+        <span class="pill">PostgreSQL</span>
+        <span class="pill">Prisma</span>
+        <span class="pill">Tailwind CSS</span>
+        <span class="pill">REST APIs</span>
+        <span class="pill">Socket.io</span>
+        <span class="pill">Git &amp; GitHub</span>
+        <span class="pill">n8n / Automação</span>
+        <span class="pill">Vercel</span>
+      </div>
+    </section>
+
+    <section id="certificados" class="section">
+      <h2 class="section-title">Certificados</h2>
+      <p class="section-subtitle">Formações e cursos concluídos recentemente.</p>
+
+      <div class="grid certificates-grid">
+        <a href="certificados/html.png" target="_blank" rel="noreferrer" class="card cert-card">
+          <span class="tag">Dev Club</span>
+          <h3 class="card-title">HTML</h3>
+          <span class="link-accent">Ver certificado ↗</span>
+        </a>
+
+        <a href="certificados/css-intermediario.pdf" target="_blank" rel="noreferrer" class="card cert-card">
+          <span class="tag">Dev Club</span>
+          <h3 class="card-title">CSS Intermediário</h3>
+          <span class="link-accent">Ver certificado ↗</span>
+        </a>
+
+        <a href="certificados/engenharia-de-prompt.pdf" target="_blank" rel="noreferrer" class="card cert-card">
+          <span class="tag">Dev Club</span>
+          <h3 class="card-title">Formação em Engenharia de Prompt</h3>
+          <span class="link-accent">Ver certificado ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <h2 class="section-title">Vamos conversar</h2>
+      <p class="section-subtitle section-subtitle-narrow">
+        Aberto a oportunidades como desenvolvedor fullstack. Entre em contato por qualquer um dos canais abaixo.
+      </p>
+
+      <div class="contact-actions">
+        <a href="mailto:joe.dlov22@gmail.com" class="btn btn-outline btn-icon">
+          <span class="icon-badge icon-email"></span>
+          E-mail
+        </a>
+        <a href="https://wa.me/5511976164766" target="_blank" rel="noreferrer" class="btn btn-outline btn-icon">
+          <span class="icon-badge icon-whatsapp"></span>
+          WhatsApp
+        </a>
+        <a href="https://www.linkedin.com/in/edleon24/" target="_blank" rel="noreferrer" class="btn btn-outline btn-icon">
+          <span class="icon-badge icon-linkedin"></span>
+          LinkedIn
+        </a>
+        <a href="https://github.com/ELT-22-dev" target="_blank" rel="noreferrer" class="btn btn-outline btn-icon">
+          <img src="icons/github.png" alt="" class="icon-badge-img" />
+          GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Edil Leon</span>
+      <div class="footer-links">
+        <a href="mailto:joe.dlov22@gmail.com">E-mail</a>
+        <a href="https://www.linkedin.com/in/edleon24/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/ELT-22-dev" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+      <span class="footer-domain">thelaflow.com</span>
+    </div>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
