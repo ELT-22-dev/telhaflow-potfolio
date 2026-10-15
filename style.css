@@ -675,6 +675,239 @@ img {
   mask-position: center;
 }
 
+.contact-layout {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .contact-layout {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 3.5rem;
+  }
+}
+
+.contact-points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9375rem;
+  color: var(--white-70);
+}
+
+.contact-points li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.contact-dot {
+  height: 0.4rem;
+  width: 0.4rem;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  background: var(--emerald);
+  box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.15);
+}
+
+/* Contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .contact-form { padding: 2rem; }
+}
+
+.contact-form:hover {
+  border-color: var(--white-10);
+  background: var(--white-05);
+}
+
+.contact-form:focus-within {
+  border-color: rgba(52, 211, 153, 0.3);
+}
+
+.contact-form .card-title {
+  margin: 0;
+}
+
+.form-row {
+  display: grid;
+  gap: 1.125rem;
+}
+
+@media (min-width: 640px) {
+  .form-row { grid-template-columns: 1fr 1fr; }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-label {
+  padding: 0;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--white-70);
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid var(--white-15);
+  background: rgba(10, 10, 15, 0.6);
+  padding: 0.75rem 0.9rem;
+  font: inherit;
+  font-size: 0.9375rem;
+  color: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input::placeholder {
+  color: var(--white-30);
+}
+
+.form-input:hover {
+  border-color: var(--white-25);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--emerald);
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.18);
+}
+
+.form-input.invalid {
+  border-color: #f87171;
+}
+
+.form-input.invalid:focus {
+  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.18);
+}
+
+.form-textarea {
+  min-height: 7rem;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.form-error {
+  min-height: 1rem;
+  font-size: 0.75rem;
+  color: #f87171;
+}
+
+.form-error:empty {
+  min-height: 0;
+}
+
+.topic-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.topic-option {
+  position: relative;
+  cursor: pointer;
+}
+
+.topic-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.topic-option span {
+  display: inline-block;
+  border-radius: 9999px;
+  border: 1px solid var(--white-15);
+  background: var(--white-05);
+  padding: 0.45rem 1rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--white-70);
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.topic-option:hover span {
+  border-color: var(--white-30);
+  color: #fff;
+}
+
+.topic-option input:checked + span {
+  border-color: var(--emerald);
+  background: rgba(52, 211, 153, 0.12);
+  color: var(--emerald-light);
+}
+
+.topic-option input:focus-visible + span {
+  outline: 2px solid var(--emerald);
+  outline-offset: 2px;
+}
+
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.form-submit {
+  align-self: flex-start;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+@media (max-width: 639px) {
+  .form-submit { align-self: stretch; }
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.form-status {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status.success {
+  color: var(--emerald-light);
+}
+
+.form-status.error {
+  color: #fca5a5;
+}
+
+.form-status a {
+  text-decoration: underline;
+}
+
 .icon-email { background-color: #ef4444; -webkit-mask-image: url("icons/email.png"); mask-image: url("icons/email.png"); }
 .icon-whatsapp { background-color: #25d366; -webkit-mask-image: url("icons/whatsapp.png"); mask-image: url("icons/whatsapp.png"); }
 .icon-linkedin { background-color: #0a66c2; -webkit-mask-image: url("icons/linkedin.png"); mask-image: url("icons/linkedin.png"); }

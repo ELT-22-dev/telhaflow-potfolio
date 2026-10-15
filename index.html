@@ -274,28 +274,87 @@
     </section>
 
     <section id="contato" class="section">
-      <h2 class="section-title">Vamos conversar</h2>
-      <p class="section-subtitle section-subtitle-narrow">
-        Aberto a oportunidades como desenvolvedor fullstack. Entre em contato por qualquer um dos canais abaixo.
-      </p>
+      <div class="contact-layout">
+        <div class="contact-intro">
+          <h2 class="section-title">Vamos conversar</h2>
+          <p class="section-subtitle section-subtitle-narrow">
+            Tem uma dúvida sobre um site, uma automação ou um sistema para o seu negócio?
+            Mande sua pergunta pelo formulário e eu respondo pessoalmente — ou fale direto por um dos canais abaixo.
+          </p>
 
-      <div class="contact-actions">
-        <a href="mailto:joe.dlov22@gmail.com" class="btn btn-outline btn-icon">
-          <span class="icon-badge icon-email"></span>
-          E-mail
-        </a>
-        <a href="https://wa.me/5511976164766" target="_blank" rel="noreferrer" class="btn btn-outline btn-icon">
-          <span class="icon-badge icon-whatsapp"></span>
-          WhatsApp
-        </a>
-        <a href="https://www.linkedin.com/in/edleon24/" target="_blank" rel="noreferrer" class="btn btn-outline btn-icon">
-          <span class="icon-badge icon-linkedin"></span>
-          LinkedIn
-        </a>
-        <a href="https://github.com/ELT-22-dev" target="_blank" rel="noreferrer" class="btn btn-outline btn-icon">
-          <img src="icons/github.png" alt="" class="icon-badge-img" />
-          GitHub
-        </a>
+          <ul class="contact-points">
+            <li><span class="contact-dot" aria-hidden="true"></span>Resposta em até 24h úteis</li>
+            <li><span class="contact-dot" aria-hidden="true"></span>Sem compromisso — tire sua dúvida primeiro</li>
+            <li><span class="contact-dot" aria-hidden="true"></span>Atendimento 100% remoto</li>
+          </ul>
+
+          <div class="contact-actions">
+            <a href="mailto:joe.dlov22@gmail.com" class="btn btn-outline btn-icon">
+              <span class="icon-badge icon-email"></span>
+              E-mail
+            </a>
+            <a href="https://wa.me/5511976164766" target="_blank" rel="noreferrer" class="btn btn-outline btn-icon">
+              <span class="icon-badge icon-whatsapp"></span>
+              WhatsApp
+            </a>
+            <a href="https://www.linkedin.com/in/edleon24/" target="_blank" rel="noreferrer" class="btn btn-outline btn-icon">
+              <span class="icon-badge icon-linkedin"></span>
+              LinkedIn
+            </a>
+            <a href="https://github.com/ELT-22-dev" target="_blank" rel="noreferrer" class="btn btn-outline btn-icon">
+              <img src="icons/github.png" alt="" class="icon-badge-img" />
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <form id="contactForm" class="card contact-form" action="https://formsubmit.co/joe.dlov22@gmail.com" method="POST" novalidate>
+          <h3 class="card-title">Envie sua pergunta</h3>
+
+          <fieldset class="form-field topic-field">
+            <legend class="form-label">Sobre o que é?</legend>
+            <div class="topic-options">
+              <label class="topic-option"><input type="radio" name="assunto" value="Site" checked /><span>Site</span></label>
+              <label class="topic-option"><input type="radio" name="assunto" value="Automação" /><span>Automação</span></label>
+              <label class="topic-option"><input type="radio" name="assunto" value="Sistema" /><span>Sistema</span></label>
+              <label class="topic-option"><input type="radio" name="assunto" value="Outro" /><span>Outro</span></label>
+            </div>
+          </fieldset>
+
+          <div class="form-field">
+            <label for="cf-nome" class="form-label">Nome</label>
+            <input id="cf-nome" name="nome" type="text" class="form-input" autocomplete="name" placeholder="Seu nome" required minlength="2" />
+            <span class="form-error" data-error-for="cf-nome"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cf-telefone" class="form-label">Telefone / WhatsApp</label>
+              <input id="cf-telefone" name="telefone" type="tel" class="form-input" autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999" required />
+              <span class="form-error" data-error-for="cf-telefone"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-email" class="form-label">E-mail</label>
+              <input id="cf-email" name="email" type="email" class="form-input" autocomplete="email" placeholder="voce@email.com" required />
+              <span class="form-error" data-error-for="cf-email"></span>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="cf-mensagem" class="form-label">Sua pergunta</label>
+            <textarea id="cf-mensagem" name="mensagem" class="form-input form-textarea" rows="4" placeholder="Conte um pouco do que você precisa ou qual é a sua dúvida." required minlength="10"></textarea>
+            <span class="form-error" data-error-for="cf-mensagem"></span>
+          </div>
+
+          <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <button type="submit" class="btn btn-primary form-submit">
+            <span class="form-submit-label">Enviar pergunta</span> <span class="btn-arrow">→</span>
+          </button>
+
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
