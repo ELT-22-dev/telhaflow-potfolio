@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       setStatus('success', `Pergunta enviada! Obrigado, ${data.nome.trim().split(' ')[0]} — vou responder em breve.`)
     } catch (error) {
       setStatus('error', 'Não foi possível enviar agora. Tente novamente ou fale comigo pelo ', {
-        href: 'https://wa.me/5511976164766',
+        href: 'https://wa.me/5511946005739',
         label: 'WhatsApp',
       })
     } finally {
